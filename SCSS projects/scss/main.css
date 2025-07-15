@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: linear-gradient(to bottom, #f7f9f7, rgba(45, 90, 74, 0.05));
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  font-family: inherit;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(45, 90, 74, 0.15);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.card--thiruvananthapuram .card__image {
+  background-image: url("https://gaviya.com/wp-content/uploads/2024/07/Thiruvananthapuram-one-day-City-Tour.jpg");
+}
+.card--kollam .card__image {
+  background-image: url("https://avathioutdoors.gumlet.io/travelGuide/dev/kollam_P8520.jpg");
+}
+.card--pathanamthitta .card__image {
+  background-image: url("https://www.dtpcpathanamthitta.com/uploads/picture_gallery/gallery_images/adavi-ecotourism-centre-pathanamthitta-8-20230508114959992569.webp");
+}
+.card--alappuzha .card__image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg");
+}
+.card--kottayam .card__image {
+  background-image: url("https://www.keralatourism.org/images/enchanting_kerala/large/illickal_kallu20220103142808_1152_1.jpg");
+}
+.card--idukki .card__image {
+  background-image: url("https://keralatourism.travel/images/destinations/places-to-visit/idukki/munnar-idukki-kerala-tourism-entry-fee-timings-holidays-reviews-small.jpg");
+}
+.card--ernakulam .card__image {
+  background-image: url("https://bookingfree.net/image.php?path=/uploads/hotel/top_cities/01d406b3d6b89a9968e46864d7245c0d.jpg");
+}
+.card--thrissur .card__image {
+  background-image: url("https://s7ap1.scene7.com/is/image/incredibleindia/vadakkunnathan-temple-thrissur-kerala-hero?qlt=82&ts=1742154006244");
+}
+.card--palakkad .card__image {
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2019/08/cover-Things-To-Do-In-Palakkad.jpg");
+}
+.card--malappuram .card__image {
+  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/101000/101691-Malappuram-District.jpg");
+}
+.card--kozhikode .card__image {
+  background-image: url("https://i0.wp.com/planashleygo.com/wp-content/uploads/2024/08/i-love-kozhikode.jpg?resize=1000%2C750&ssl=1");
+}
+.card--wayanad .card__image {
+  background-image: url("https://www.gokitetours.com/wp-content/uploads/2025/04/best-places-to-visit-in-wayanad-1200x675.webp");
+}
+.card--kannur .card__image {
+  background-image: url("https://assets-news.housing.com/news/wp-content/uploads/2022/09/02151433/places-to-visit-in-kannur-shutterstock_1604282707-1200x700-compressed.jpg");
+}
+.card--kasaragod .card__image {
+  background-image: url("https://thegreenodyssey.in/wp-content/uploads/2022/06/kasaraGod.jpg");
+}
+.card__image {
+  height: 200px;
+  background: linear-gradient(135deg, #2d5a4a, #1e90ff, #ff6b35);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.card__image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  display: none;
+}
+.card__content {
+  padding: 1.5rem;
+  position: relative;
+  min-height: 180px;
+}
+.card__title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card__description {
+  color: #5d6d5d;
+  margin-bottom: 1.5rem;
+  padding-bottom: 50px;
+}
+
+.btn {
+  background-color: #2d5a4a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #245442;
+  transform: translateY(-1px);
+}
+.btn--primary {
+  background-color: #2d5a4a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn--primary:hover {
+  background-color: #245442;
+  transform: translateY(-1px);
+}
+.btn--secondary {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn--secondary:hover {
+  background-color: #e55d2e;
+  transform: translateY(-1px);
+}
+.btn--accent {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn--accent:hover {
+  background-color: #1a7acc;
+  transform: translateY(-1px);
+}
+.btn--explore {
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.btn--explore:hover {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #2d5a4a, #1e90ff);
+  box-shadow: 0 4px 12px rgba(45, 90, 74, 0.2);
+}
+.header__title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+.header__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */
