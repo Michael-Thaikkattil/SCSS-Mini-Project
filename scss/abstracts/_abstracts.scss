@@ -1,0 +1,64 @@
+// Variables - Kerala Tourism Theme
+$primary-color: #2d5a4a; // Deep Kerala green
+$secondary-color: #ff6b35; // Warm orange (Kerala spice)
+$accent-color: #1e90ff; // Backwater blue
+$text-color: #2c3e50; // Dark blue-gray
+$background-color: #f7f9f7; // Light green tint
+$white: #fff;
+$gray-light: #e8f5e8; // Light green-gray
+$gray-medium: #5d6d5d; // Medium green-gray
+$border-radius: 12px;
+$box-shadow: 0 4px 20px rgba(45, 90, 74, 0.15);
+$transition: all 0.3s ease;
+
+// Typography
+$font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-size-base: 16px;
+$font-size-large: 1.5rem;
+$font-size-xlarge: 2rem;
+$line-height-base: 1.6;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-shadow {
+  box-shadow: 0 4px 20px rgba(45, 90, 74, 0.15);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+@mixin button-style($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $hover-color;
+    transform: translateY(-1px);
+  }
+}
